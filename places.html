@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My favorite places</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <style>
+      /* чтоб добавить заокругление карточки border-radius*/
+      .card {
+        border-radius: 1em;
+        text-align: center;
+        padding: 1em;
+      }
+      /*ефект изменения бекграунда при наведении мишки hover*/
+      .card:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      /*делаем изображения круглыми*/
+      .card img {
+        border-radius: 50%;
+        width: 60%;
+        margin: auto;
+      }
+    </style>
+    <!-- padding внутренний отступ-->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand p-0" href="index.html">
+          <img src="DS.png" alt="Logo" width="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="places.html">Favorite places</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <!-- чтоб указать сколько мы хотим показывать карточек в ряду, при помощи этих классов мы указываем сколько столбцов должно быть в ряду в зависимости от ширины екрана, g-5 чтобы увеличить расстояние между карточками -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        <div class="col">
+          <div class="card">
+            <!-- чтобы добавить изображение с бесплатного сайта мы указываем ссылку, потом номер изображение (идентификатор) и потом размер типа 300 пикселей-->
+            <img
+              src="https://picsum.photos/id/49/1500"
+              class="card-img-top"
+              alt="My image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Greece</h5>
+              <p class="card-text">
+                If this is your first time in Greece, it makes sense to go to
+                the most famous destinations, i.e. Athens, Santorini and
+                Mykonos. Keep in mind that these Greek destinations are quite
+                popular.
+              </p>
+              <a
+                href="https://picsum.photos/id/49/1500"
+                target="_blank"
+                class="btn btn-primary"
+                >Large photo</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/id/374/300"
+              class="card-img-top"
+              alt="My image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Brazil</h5>
+              <p class="card-text">
+                The Rio Carnival celebration dates back to the 1650s.Come to
+                Celebrate Rio Carnival with us. The festival is set to take
+                place from 17 February 2023 in the Marvelous City of Rio de
+                Janeiro.
+              </p>
+              <!-- btn btn-primary кнопки-->
+              <a
+                href="https://picsum.photos/id/374/1500"
+                target="_blank"
+                class="btn btn-primary"
+                >Large photo</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/id/690/300"
+              class="card-img-top"
+              alt="My image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">London</h5>
+              <p class="card-text">
+                Welcome to London! London, city, capital of the United Kingdom.
+                It is among the oldest of the worlds great cities—its history
+                spanning nearly two millennia—and one of the most cosmopolitan.
+              </p>
+              <a
+                href="https://picsum.photos/id/690/1500"
+                target="_blank"
+                class="btn btn-primary"
+                >Large photo</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
